@@ -1,22 +1,8 @@
 import { createGlobalStyle, css } from 'styled-components';
 
-export const OverFlowScrollbar = css`
-  ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-  }
-  ::-webkit-scrollbar-track {
-    background-color: ${({ theme }) => theme.background.lightGray};
-  }
-  ::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-    background-color: ${({ theme }) => theme.text.caption};
-  }
-`;
+
 export const GlobalStyle = createGlobalStyle`
-  .nav-header-icon {
-    --icon-color: ${({ theme }) => theme.background.widget}
-  }
+
   body {
         
     margin: 0;
@@ -26,14 +12,13 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 24px;
     letter-spacing: 0;
     text-align: left;
-    color: ${({ theme }) => theme.text.basic};
-    background-color: ${({ theme }) => theme.background.main};
+    color: #000;
+    background-color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
  
     #root {
       display: flex;
-      ${OverFlowScrollbar};  
       flex-direction: column;
       flex-wrap: nowrap;
       height: 100%;
