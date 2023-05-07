@@ -4,7 +4,7 @@ type Props = {}
 
 export const MainPage = ({}: Props) => {
   return (
-    <div>index</div>
+    <div style={{width: '100%'}}>index</div>
   )
 }
 

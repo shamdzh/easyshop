@@ -1,16 +1,19 @@
-import React from 'react'
-import { MainPage } from './pages/MainPage'
-import { GlobalStyle } from './themes/globalStyle'
+import React from "react";
+import { MainPage } from "./pages/MainPage";
+import { GlobalStyle } from "./themes/globalStyle";
+import { Layout } from "./components/Layout";
 
-type Props = {}
+type Props = {};
 
 const App = (props: Props) => {
   return (
     <div>
-        <GlobalStyle />
+      <GlobalStyle />
+      <Layout>
         <MainPage />
+      </Layout>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

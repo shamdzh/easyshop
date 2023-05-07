@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 export const StyledWrapper = styled.main`
   flex-grow: 1;
-  margin-top: 60px;
-
 `;
 
 export const StyledContent = styled.div`
